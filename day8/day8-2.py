@@ -6,8 +6,8 @@ start_nodes = []
 
 def lcm(nums):
     lcm = nums[0]
-    for i in nums[1:]:
-        lcm = lcm * i // gcd(lcm, i)
+    for num in nums[1:]:
+        lcm = lcm * num // gcd(lcm, num)
     return lcm
 
 
